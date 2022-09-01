@@ -1,7 +1,7 @@
 const fetchdData = () => {
-  fetch("http://localhost:8000/data")
+  fetch("http://localhost:9000/data")
     .then((res) => res.json())
-    .then((data) => console.log(data));
+    .then((data) => (document.getElementById("data").innerText = data));
 };
 
 fetchdData();
