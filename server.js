@@ -7,6 +7,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/data", (req, res) => {
+  res.set("Access-Control-Allow-Origin", "http://127.0.0.1:5500");
   res.json("CORS success!!!");
 });
 
