@@ -1,15 +1,15 @@
 const express = require("express");
 const app = express();
-const PORT = 8000;
+const PORT = 9000;
 
 app.get("/", (req, res) => {
   res.send("Hello!");
 });
 
 app.get("/data", (req, res) => {
-  res.json({ name: "kani", office: "roppongi" });
+  res.json("CORS success!!!");
 });
 
 app.listen(PORT, () => {
-  console.log("server is running:8000");
+  console.log("server is running:9000");
 });
